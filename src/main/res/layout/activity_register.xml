@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:fillViewport="true"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="text"
+            android:id="@+id/name_et"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:id="@+id/lname_et"
+            android:inputType="text"
+            android:layout_marginTop="10dp"/>
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Country"-->
+            <!--android:id="@+id/country_et"-->
+            <!--android:layout_marginTop="10dp"/>-->
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CNIC/Passport"
+            android:id="@+id/cnic_et"
+            android:inputType="number"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:id="@+id/mobile_num_et"
+            android:inputType="number"
+            android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/email_et"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/password_et"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contacts"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Contact's Name"
+            android:id="@+id/emergency1_name_et"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+        <com.example.lifezline.custom_views.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Contact's Number"
+            android:id="@+id/emergency1_num_et"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:drawableRight="@drawable/addressbook_icon"
+            android:drawablePadding="5dp"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/ic_menu_add"
+            android:id="@+id/first_more_btn"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Second Contact's Name"
+            android:id="@+id/emergency2_name_et"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+        <com.example.lifezline.custom_views.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Second Contact's Number"
+            android:id="@+id/emergency2_num_et"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:inputType="number"
+            android:drawableRight="@drawable/addressbook_icon"
+            android:drawablePadding="5dp"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/ic_menu_add"
+            android:id="@+id/second_more_btn"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Third Contact's Name"
+            android:id="@+id/emergency3_name_et"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+        <com.example.lifezline.custom_views.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Third Contact's Number"
+            android:id="@+id/emergency3_num_et"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:inputType="number"
+            android:drawableRight="@drawable/addressbook_icon"
+            android:drawablePadding="5dp"/>
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/submit_button"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
